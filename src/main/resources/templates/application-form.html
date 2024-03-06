@@ -12,6 +12,7 @@
 </head>
 <body>
 <script src="index.js"></script>
+
 <div class="container">
     <h2>Application Form</h2>
     <div class="container">
@@ -52,9 +53,9 @@
 
             <div class="row g-3 align-items-center mb-2">
                 <div class="col-md-4">
+                    <label class="form-label" for="position">Position</label>
                     <select class="form-select mb-3 shadow-sm bg-body-tertiary rounded"
                             aria-label="Default select example" id="position" name="position" th:field="*{position}">
-                        <option selected>Job Position</option>
                         <option value="entrylevel">Entry Level</option>
                         <option value="midlevel">Mid Level</option>
                         <option value="seniorlevel">Senior Level</option>
@@ -64,17 +65,17 @@
 
             <div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="location" id="berlin" th:field="*{location}"
+                    <input type="radio" class="form-check-input" name="location" id="berlin" th:field="*{location}"
                            th:value="berlin">
                     <label class="form-check-label" for="berlin">Berlin</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="location" id="munich" th:field="*{location}"
+                    <input type="radio" class="form-check-input" name="location" id="munich" th:field="*{location}"
                            th:value="munich">
                     <label class="form-check-label" for="munich">Munich</label>
                 </div>
                 <div class="form-check mb-3">
-                    <input class="form-check-input" type="radio" name="location" id="stuttgart" th:field="*{location}"
+                    <input type="radio" class="form-check-input" name="location" id="stuttgart" th:field="*{location}"
                            th:value="stuttgart">
                     <label class="form-check-label" for="stuttgart">Stuttgart</label>
                 </div>
